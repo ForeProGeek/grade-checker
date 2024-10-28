@@ -14,25 +14,26 @@
             justify-content: center;
             background: linear-gradient(150deg, #b827c8, #20b8bb);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #222121;
+            color: #ebdfdf;
         }
     
         .card {
             background: linear-gradient(150deg, #b827c8, #20b8bb);
             width: 100%;
-            border-radius: 0px;
+            border-radius: 10px;
             padding: 10px;
-            color: #000000;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body> 
     <div class="">
-        <div class="container-fluid card text-center col-lg-4 col-md-6 col-sm-10 mx-auto shadow-none rounded-3 px-2">
+        <div class="card text-center col-lg-4 col-md-6 col-sm-10 mx-auto shadow-none rounded-3 px-2">
             <h1 class="text-center my-lg-3 fw-bold">Grade Checker</h1>
             <p class="text-center fs-3">...know your fate.</p>
             <input type="number" class="form-control shadow-none my-lg-3 my-2" placeholder="Enter your score" id="score" autofocus>
-            <button onclick="gradeChecker()" class="btn btn-success btn-rounded my-2 w-100">Check</button>
+            <button onclick="gradeChecker()" type="button" class="btn btn-success btn-rounded my-2 w-100">Check</button>
         <div class="text-center fw-bold fs-3 my-2" id="showResult">Your result will show here</div>
     </div>
 
